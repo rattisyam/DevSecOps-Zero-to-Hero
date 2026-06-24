@@ -27,8 +27,8 @@ steps:
   - name: Fetch Azure Credentials from Vault
     uses: hashicorp/vault-action@v3
     with:
-      url: http://40.80.91.125/:8200
-      role: gh-actions-role
+      url: http://40.80.91.125:8200
+      role: github-actions
       method: jwt
       secrets: |
         azure/creds/storage-role client_id | ARM_CLIENT_ID ;
