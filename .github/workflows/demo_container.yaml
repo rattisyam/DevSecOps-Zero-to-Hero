@@ -27,7 +27,7 @@ jobs:
         with:
           url: http://40.80.91.125:8200
           method: jwt
-          role: gh-actions-role
+          role: github-actions
           secrets: |
             azure/creds/storage-role client_id | ARM_CLIENT_ID ;
             azure/creds/storage-role client_secret | ARM_CLIENT_SECRET ;
